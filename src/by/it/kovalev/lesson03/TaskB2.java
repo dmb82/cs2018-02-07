@@ -38,8 +38,8 @@ class TaskB2 {
         int b = sc.nextInt();
         int c = sc.nextInt();
         double dis = b * b - (4 * a * c);
-        double x = (-b - (b * b - 4 * a * c) / (b * b - 4 * a * c)) / (2 * a);
-        double x2 = (-b + (b * b - 4 * a * c) / (b * b - 4 * a * c)) / (2 * a);
+        double x = (-b + Math.sqrt(dis)) / (2 * a);
+        double x2 = (-b - Math.sqrt(dis)) / (2 * a);
         double x3 = -b / (2 * a);
         if (dis > 0) System.out.println(x + " " + x2);
         if (dis == 0) System.out.println(x3);

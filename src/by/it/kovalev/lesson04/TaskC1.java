@@ -37,6 +37,25 @@ package by.it.kovalev.lesson04;
 
 */
 
+import java.util.Scanner;
+
 public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        if (i < 300 || i > 3000) {
+            System.out.println("Мы вам перезвоним!");
+        } else
+            for (int j = 0; j <= 14; j++) {
+
+
+
+            }
+
+    }
+
 
 }
+
+
